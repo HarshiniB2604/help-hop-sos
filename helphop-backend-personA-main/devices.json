@@ -1,0 +1,10 @@
+[
+  {
+    "deviceId": "TEST-1234",
+    "role": "victim",
+    "public_key": "ABC123PUBLICKEY",
+    "fcm_token": "optional-token",
+    "updatedAt": "2025-11-29T09:14:26.046Z",
+    "createdAt": "2025-11-29T08:40:05.107Z"
+  }
+]

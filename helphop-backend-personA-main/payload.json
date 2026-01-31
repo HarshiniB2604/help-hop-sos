@@ -1,0 +1,6 @@
+{
+  "deviceId": "TEST-1234",
+  "role": "victim",
+  "public_key": "ABC123PUBLICKEY",
+  "fcm_token": "optional-token"
+}

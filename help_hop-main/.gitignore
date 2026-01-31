@@ -1,0 +1,20 @@
+# Flutter/Dart/Pub
+.dart_tool/
+.packages
+.pub-cache/
+build/
+
+# IntelliJ related
+.idea/
+*.iml
+
+# VSCode settings
+.vscode/
+
+# Generated files
+ios/Flutter/flutter_export_environment.sh
+ios/Flutter/ephemeral/
+macos/Flutter/ephemeral/
+windows/flutter/
+linux/flutter/
+web/.dart_tool/

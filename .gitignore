@@ -1,0 +1,48 @@
+# Flutter
+build/
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+
+# Node
+node_modules/
+.env
+.env.*
+npm-debug.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Hive / local DB
+*.hive
+*.lock
+
+# Logs
+logs/
+
+# Environment variables
+.env
+.env.local
+.env.*
+
+**/.env
+node_modules/
+.dart_tool/
+build/
+# Android
+android/.gradle/
+android/local.properties
+android/app/debug/
+android/app/profile/
+android/app/release/
+
+# iOS
+ios/Pods/
+ios/.symlinks/
+ios/Flutter/Flutter.framework
+ios/Flutter/App.framework

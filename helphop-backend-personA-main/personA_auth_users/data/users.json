@@ -1,0 +1,38 @@
+[
+  {
+    "id": "1",
+    "name": "Harshini",
+    "phone": "9876543210",
+    "deviceId": "A1B2-C3D4",
+    "public_key": "pubkey_placeholder",
+    "bloodGroup": "O+",
+    "allergies": [
+      "dust"
+    ],
+    "createdAt": "2025-11-29T08:23:49.994Z"
+  },
+  {
+    "id": "2",
+    "name": "Harshini",
+    "phone": "9876543210",
+    "deviceId": "A1B2-C3D4",
+    "public_key": "",
+    "bloodGroup": "O+",
+    "allergies": [
+      "dust"
+    ],
+    "createdAt": "2025-11-29T09:33:18.253Z"
+  },
+  {
+    "id": "3",
+    "name": "Harshini",
+    "phone": "9999999999",
+    "deviceId": "DEV1234",
+    "public_key": "dummykey",
+    "bloodGroup": "A+",
+    "allergies": [
+      "dust"
+    ],
+    "createdAt": "2025-12-01T15:03:04.287Z"
+  }
+]
