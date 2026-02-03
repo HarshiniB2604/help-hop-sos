@@ -25,6 +25,7 @@ StreamSubscription? _scanSub; // ✅ ADD THIS
   Stream<Map<String, DetectedSOS>> get stream => _controller.stream;
 
   void start() {
+    stop();
     print("🟢 SCANNER STARTED");
     FlutterBluePlus.startScan();
 
@@ -99,6 +100,7 @@ StreamSubscription? _scanSub; // ✅ ADD THIS
   void stop() {
   _scanSub?.cancel();      // ✅ cancel listener
   FlutterBluePlus.stopScan();
+  _relayed.clear();
 }
 
 void suppress(String sosId) {

@@ -319,7 +319,11 @@ class _RescuerHomeScreenState extends State<RescuerHomeScreen> {
         _stopPolling(); // ❌ STOP POLLING
 
         _scanner.start();
-        _listenToBle();
+        Future.delayed(const Duration(milliseconds: 300), () {
+          if (mounted && !_isOnline) {
+            _listenToBle();
+           }
+        });
       }
     });
 
@@ -364,7 +368,7 @@ class _RescuerHomeScreenState extends State<RescuerHomeScreen> {
 
           // ❌ Already exists (online OR offline) → ignore
           if (_requests.any((r) => r.id.replaceFirst('BLE_', '') == baseId)) {
-            return;
+            continue;
           }
 
           _requests.insert(
@@ -1647,8 +1651,12 @@ class _SOSScreenState extends State<SOSScreen> {
       hops: 0,
     );
 
-    final advertiser = SosAdvertiser();
-    await advertiser.start(blePacket);
+    final isOnline = await NetworkService().isOnline;
+
+    if (!isOnline) {
+      final advertiser = SosAdvertiser();
+      await advertiser.start(blePacket);
+    }
 
     // =========================
     // 🧠 BACKEND / DTN QUEUE

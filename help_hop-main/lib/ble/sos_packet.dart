@@ -34,7 +34,7 @@ class SosPacket {
   static String generateSosId() {
     const chars = "ABCDEF0123456789";
     final rand = Random();
-    return List.generate(4, (_) => chars[rand.nextInt(chars.length)]).join();
+    return List.generate(8, (_) => chars[rand.nextInt(chars.length)]).join();
   }
 
   static String toHex(String s) {
